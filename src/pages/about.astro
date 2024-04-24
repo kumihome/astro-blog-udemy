@@ -15,6 +15,7 @@ const skills = ["HTML", "CSS", "Javascript", "React", "Astro", "Next.js"];
 const skillColor = "green";
 const fontWeight = "bold";
 const textCase = "uppercase";
+const pageDescription ="このサイトはShinCodeのブログサイトのaboutページです。";
 ---
 
 <style define:vars={{skillColor, fontWeight, textCase}}>
@@ -28,7 +29,7 @@ const textCase = "uppercase";
     text-transform: var(--textCase);
   }
 </style>
-<BaseLayout pageTitle = {pageTitle}>
+<BaseLayout pageTitle = {pageTitle} pageDescription={pageDescription}>
 <h2>
   今回はAstroフレームワークを使って高速で動くブログを作っていきたいと思います。
 </h2>

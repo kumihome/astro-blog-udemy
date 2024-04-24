@@ -2,9 +2,10 @@
 import Greeting from "../components/Greeting";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "Astro Blog";
+const pageDescription = "このサイトはShinCodeのブログサイトです。"
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle} pageDescription={pageDescription}>
   <h2>ブログのサブタイトル</h2>
   <Greeting
     client:load
